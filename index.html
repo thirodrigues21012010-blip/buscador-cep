@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuscaCEP | Consulte seu endereço</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><a class="marca" href="index.html">Busca<span>CEP</span></a><span>Endereços do Brasil</span></header>
+  <main>
+    <section class="introducao">
+      <span class="etiqueta">SIMPLES, RÁPIDO E GRATUITO</span>
+      <h1>Um CEP.<br>Seu endereço completo.</h1>
+      <p>Encontre a rua, o bairro e a cidade de um endereço brasileiro em poucos segundos.</p>
+    </section>
+    <section class="painel" aria-labelledby="titulo-busca">
+      <h2 id="titulo-busca">Qual endereço você procura?</h2>
+      <form id="formulario" novalidate>
+        <label for="cep">Digite o CEP</label>
+        <div class="busca"><input id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="9" placeholder="00000-000" aria-describedby="ajuda mensagem"><button id="buscar" type="submit">Buscar CEP</button></div>
+        <small id="ajuda">Informe 8 números, com ou sem hífen. Exemplo: 01001-000.</small>
+      </form>
+      <p id="mensagem" role="status" aria-live="polite">O endereço consultado aparecerá abaixo.</p>
+      <article id="resultado" hidden aria-labelledby="titulo-resultado">
+        <div class="cabecalho-resultado"><h3 id="titulo-resultado">Endereço encontrado</h3><span id="cep-encontrado"></span></div>
+        <dl>
+          <div class="largo"><dt>Logradouro</dt><dd id="rua"></dd></div>
+          <div><dt>Bairro</dt><dd id="bairro"></dd></div>
+          <div><dt>Cidade</dt><dd id="cidade"></dd></div>
+          <div><dt>Estado (UF)</dt><dd id="estado"></dd></div>
+          <div><dt>DDD</dt><dd id="ddd"></dd></div>
+          <div class="largo"><dt>Complemento</dt><dd id="complemento"></dd></div>
+        </dl>
+      </article>
+    </section>
+  </main>
+  <footer>Dados fornecidos pelo <a href="https://viacep.com.br/" target="_blank" rel="noopener noreferrer">ViaCEP</a> · Projeto de Desenvolvimento de Websites</footer>
+</body>
+</html>
