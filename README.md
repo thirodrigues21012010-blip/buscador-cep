@@ -49,6 +49,8 @@ Para verificar manualmente, abra a página e consulte `01001-000`, depois `123` 
 
 Repositório da atividade: https://github.com/thirodrigues21012010-blip/buscador-cep
 
-Os testes automatizados foram executados com sucesso. O endereço do site pode ser consultado em Settings → Pages após a conclusão da publicação.
+Site publicado: https://thirodrigues21012010-blip.github.io/buscador-cep/
+
+Os testes automatizados foram executados com sucesso. Também foram verificados dois cenários no site publicado: `01001-000` retornou Praça da Sé, Sé, São Paulo/SP; `123` exibiu a mensagem de validação de oito números. O GitHub Pages concluiu a implantação com sucesso.
 
 Documentação da API: https://viacep.com.br/
